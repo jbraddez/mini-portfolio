@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="website icon" type="png" href="./images/webicon.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="prbody">
+    <h2 class="h2">With only HTML, CSS and JavaScript</h2>
+    
+    <section id="projects">
+        <a target="_blank" href="https://jbraddez.github.io/netflix-signup.io/">
+            <div class="card netflix-card">
+                <div class="card-cover">
+                    <img alt="My version of a Netflix website remake" type="png" src="./images/netflix-web.png">
+                </div>
+                <h4>Netflix Log In</h4>
+                <p style="text-decoration: none !important;">My best project so far using the design trend 'Glassmorphism' to create the container.</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/simple-calculator/">
+            <div class="card calc-card">
+                <div class="card-cover">
+                    <img class="card-img" alt="A calculator website" type="png" src="./images/calc-web.png">
+                </div>
+                <h4>Simple, Quick Calulator</h4>
+                <p style="text-decoration: none !important;">Using only HTML and CSS I made a simple yet effective calulator.</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/google-attempt-copy-personal.io/">
+            <div class="card google-card">
+                <div class="card-cover">
+                    <img class="card-img" alt="My remake of google" type="png" src="./images/google-web.png">
+                </div>
+                <h4>Copy of Google</h4>
+                <p style="text-decoration: none !important;">A small project to practice copying the search engine Google.</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/currency-converter/">
+            <div class="card currency-card">
+                <div class="card-cover">
+                    <img class="card-img" alt="A currency converter website" type="png" src="./images/currency-web.png">
+                </div>
+                <h4>Currency Converter</h4>
+                <p style="text-decoration: none !important;">Using HTML CSS and JS I created a cash converter which converts across 5 different currencies.</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/passwordGenerator/">
+            <div class="card">
+                <div class="card-cover">
+                    <img src="./images/password-web.png" type="png" alt="password generator website" class="card-img">
+                </div>
+                <h4>Password Generator</h4>
+                <p style="text-decoration: none !important;">A simple password generator that you can copy for multiple uses.</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/quickquiz/">
+            <div class="card">
+                <div class="card-cover">
+                    <img src="./images/quiz-web.png" type="png" alt="small quiz website" class="card-img">
+                </div>
+                <h4>Quick Quiz</h4>
+                <p style="text-decoration: none !important;">A small 5 question quiz with random question, can you get 5 out of 5?</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/shde-update2.0/">
+            <div class="card">
+                <div class="card-cover">
+                    <img src="./images/SHDE-web.png" type="png" alt="SHDE Website" class="card-img">
+                </div>
+                <h4>SHDE Official</h4>
+                <p style="text-decoration: none !important;">A pre-release version of SHDE's website, out July 16th 2024 @shdemusic.com</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/QRcode-generator/">
+            <div class="card">
+                <div class="card-cover">
+                    <img src="./images/QRcode-web.png" type="png" alt="QR code generator website" class="card-img">
+                </div>
+                <h4>QR Code Generator</h4>
+                <p style="text-decoration: none !important;">My first application of a simple API to produce a QR code for any text or URL.</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/notes-app/">
+            <div class="card">
+                <div class="card-cover">
+                    <img src="./images/notes-web.png" type="png" alt="Notes website" class="card-img">
+                </div>
+                <h4>Notes App</h4>
+                <p style="text-decoration: none !important;">A simple notes app which saves locally so they'll always be there wherever you are.</p>
+            </div>
+        </a>
+        <a target="_blank" href="https://jbraddez.github.io/weather-app/">
+            <div class="card">
+                <div class="card-cover">
+                    <img src="./images/weather-web.png" type="png" alt="Weather website" class="card-img">
+                </div>
+                <h4>Weather App</h4>
+                <p style="text-decoration: none !important;">Using the Open Weather API I built this website to check the weather of any city.</p>
+            </div>
+        </a>
+    </section>
+    
+    
+    <header style="position: absolute !important;">
+        <nav>
+            <a href="index.html"><button><span>Home</span></button></a>
+            <a href="about-me.html"><button><span>About Me</span></button></a>
+        </nav>
+    </header>
+    <script>
+        function textsize(){
+    var screenWidth = window.innerWidth;
+    var h2 = document.querySelector('.h2');
+    if (screenWidth < 700){
+        h2.style.fontSize = '1rem';
+    }else{
+        h2.style.fontSize = '';
+    }
+}
+
+window.addEventListener('load', textsize)
+window.addEventListener('resize', textsize)
+    </script>
+</body>
+</html>

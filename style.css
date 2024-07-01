@@ -1,0 +1,244 @@
+*{
+    font-family: 'Courier New', Courier,monospace; 
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #212121;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+header {
+    height: 15%;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+header nav {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav button {
+    margin: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #9e9e9e;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 2px solid #ffffff80;
+    transition: 0.5s ease;
+}
+
+header nav button:hover,
+header nav button:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+  
+
+.bg{
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+.landing-title{
+    font-weight: 600;
+    width: 80%;
+    font-size: 4rem;
+    color: #eeeeee;
+    margin: 10%;  
+}
+
+.landing-p{
+    color: #eeeeee;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 10%;
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+}
+
+.h2{
+    color: #eeeeee;
+    font-size: 2rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow: -moz-hidden-unscrollable;
+}
+
+#projects{
+    position: absolute;
+    top: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card:focus{
+    box-shadow: none !important;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    color: #212121;
+    padding: 10px;
+    transition: 0.5s;
+    outline: none;
+    margin: 20px 0 !important;
+}
+
+
+.card:hover {
+    background-color: rgba(255,255,255,0.6);
+    text-shadow: none;
+    transform: translateY(-10px);
+    
+}
+
+h4 {
+    transform: translateY(10px);
+    text-align: center;
+}
+
+.card-cover {
+    overflow: hidden;
+    width: 100%;
+    height: 60%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#prbody {
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* This ensures the background image stays fixed while scrolling */
+    min-height: 100vh;
+    height: auto; 
+    overflow: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1300px;
+}
+
+
+
+
+
+
+
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+
+
+
+
+.about-title{
+    color: #eeeeee;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-p{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #eeeeee;
+    font-size: 1.5rem;
+}
+
+.a-href:hover{
+    text-decoration: underline;
+    color:#4d0269;
+}

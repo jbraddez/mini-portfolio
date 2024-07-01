@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mini Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="./images/webicon.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <img class="bg" type="jpg" src="./images/bg.jpg">
+
+    <main>
+        <h1 class="landing-title">Hi, I'm Jacob</h1>
+        <p class="landing-p">I'm a beginner developer currently learning full stack development. I have previously worked with python and creating my first (non-terminal based) projects with pygame. Take a look at my published websites!</p>
+    </main>
+
+    <header>
+        <nav>
+            <a href="my-projects.html"><button><span>My Projects</span></button></a>
+            <a href="about-me.html"><button><span>About Me</span></button></a>
+        </nav>
+    </header>
+    <script>
+        function text(){
+    var screenWidth = window.innerWidth;
+    var landp = document.querySelector('.landing-p');
+    var h2 = document.querySelector('.h2');
+    if (screenWidth < 700){
+        landp.style.fontSize = '1rem';
+        h2.style.fontSize = '1rem';
+    }else{
+        landp.style.fontSize = '';
+        h2.style.fontSize = '';
+    }
+}
+
+window.addEventListener('load', text)
+window.addEventListener('resize', text)
+    </script>
+</body>
+</html>
